@@ -4,7 +4,7 @@
     <!-- fill my routers-->
      <v-app>
       <v-navigation-drawer v-model="showNav" absolute fixed floating app>
-          <nav-drawer :currentView="currentView"></nav-drawer>
+          <nav-drawer v-bind:currentView="currentView2"></nav-drawer>
       </v-navigation-drawer>
       <v-content>
         <v-container>
@@ -30,7 +30,7 @@ export default {
     }
   },
    computed: {
-    currentView() {
+    currentView2() {
       const path = this.$route.path
       return path.replace(/^\//, '') || 'home'
     },

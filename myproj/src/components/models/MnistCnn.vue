@@ -165,6 +165,7 @@ export default {
 
   methods: {
     clear() {
+      console.log("start clear");
       this.clearIntermediateOutputs()
       const ctx = document.getElementById('input-canvas').getContext('2d')
       ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
@@ -177,6 +178,7 @@ export default {
       this.strokes = []
     },
     activateDraw(e) {
+      console.log("activite draw");
       this.drawing = true
       this.strokes.push([])
       let points = this.strokes[this.strokes.length - 1]
@@ -184,6 +186,8 @@ export default {
     },
     draw(e) {
       if (!this.drawing) return
+
+      console.log("drawing " + e.clientX + " " + e.clientY);
 
       const ctx = document.getElementById('input-canvas').getContext('2d')
 
@@ -220,6 +224,8 @@ export default {
       function() {
         if (!this.drawing) return
         this.drawing = false
+
+        console.log("deactivate draw");
 
         const ctx = document.getElementById('input-canvas').getContext('2d')
 

@@ -15,6 +15,12 @@
           <span class="menu-item-subheading">MNIST</span>
         </a>
       </li>
+      <li :class="{ active: currentView === 'mnist-cnn-2' }">
+        <a href="#/mnist-cnn-2">
+          <span class="menu-item-heading">Basic Convnet2222</span>
+          <span class="menu-item-subheading">MNIST222</span>
+        </a>
+      </li>
     </ul>
   </aside>
 </template>

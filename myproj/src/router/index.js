@@ -11,7 +11,8 @@ const routes = new Router({
     { path: '/', name: 'Home', component: Home },
     { path: '/home', name: 'Home', component: Home },
     { path: '/hello-world', name: 'HelloWorld', component: HelloWorld },
-    { path: '/mnist-cnn', component: MnistCnn }
+    { path: '/mnist-cnn', component: MnistCnn },
+    { path: '/mnist-cnn-2', component: MnistCnn }
   ]
 })
 
