@@ -4,7 +4,7 @@
     <!-- fill my routers-->
      <v-app>
       <v-navigation-drawer v-model="showNav" absolute fixed floating app>
-          <nav-drawer v-bind:currentView="currentView2"></nav-drawer>
+          <nav-drawer :currentView="currentView2"></nav-drawer>>>>>>>> master
       </v-navigation-drawer>
       <v-content>
         <v-container>
